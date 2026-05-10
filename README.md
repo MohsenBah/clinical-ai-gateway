@@ -25,19 +25,22 @@ Client (Streamlit / React via Kasm)
         ▼
 FastAPI Gateway (Security Layer)
         │
- ├── Input Validation (Prompt Injection Defense)
- ├── PHI Output Filtering
- ├── Rate Limiting
- ├── Audit Logging → SIEM (Wazuh)
+  ├── Input Validation (Prompt Injection Defense)
+  ├── PHI Output Filtering
+  ├── Rate Limiting
+  ├── Audit Logging → SIEM (Wazuh)
         │
         ▼
-Local LLM (Ollama)
+RAG Pipeline
+  ├── Query → Context Retrieval (Chroma)
+  ├── PHI Redaction (Microsoft Presidio)
+  ├── Enhanced Prompt → Local LLM (Ollama)
         │
         ▼
-Vector DB (Qdrant / Chroma)
+Vector DB (Chroma)
         │
         ▼
-Synthetic Clinical Data (Synthea / OpenEMR)
+Synthetic Clinical Data (Synthea / FHIR)
 ```
 
 ---

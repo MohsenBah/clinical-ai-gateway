@@ -1,0 +1,82 @@
+[
+  {
+    "id": "PAT001",
+    "patient_name": "John Smith",
+    "diagnosis": "Type 2 Diabetes Mellitus",
+    "medications": "Metformin 500mg twice daily, Insulin glargine 20 units nightly",
+    "symptoms": "Polyuria, polydipsia, fatigue",
+    "treatment_plan": "Dietary modification, regular exercise, blood glucose monitoring",
+    "notes": "Patient reports good compliance with medications. HbA1c last measured at 7.2%.",
+    "date": "2024-01-15"
+  },
+  {
+    "id": "PAT002",
+    "patient_name": "Sarah Johnson",
+    "diagnosis": "Hypertension",
+    "medications": "Lisinopril 10mg daily, Hydrochlorothiazide 25mg daily",
+    "symptoms": "Headaches, dizziness",
+    "treatment_plan": "Low sodium diet, weight management, regular blood pressure checks",
+    "notes": "Blood pressure well controlled at 128/82 mmHg. Last visit showed good adherence.",
+    "date": "2024-02-20"
+  },
+  {
+    "id": "PAT003",
+    "patient_name": "Michael Brown",
+    "diagnosis": "Acute Coronary Syndrome",
+    "medications": "Aspirin 81mg daily, Atorvastatin 40mg nightly, Metoprolol 25mg twice daily",
+    "symptoms": "Chest pain, shortness of breath",
+    "treatment_plan": "Cardiac rehabilitation, smoking cessation, lipid management",
+    "notes": "Post-MI patient. Echocardiogram shows EF 45%. Scheduled for follow-up angiogram.",
+    "date": "2024-03-10"
+  },
+  {
+    "id": "PAT004",
+    "patient_name": "Emily Davis",
+    "diagnosis": "Asthma",
+    "medications": "Albuterol inhaler as needed, Fluticasone 250mcg twice daily",
+    "symptoms": "Wheezing, cough, shortness of breath",
+    "treatment_plan": "Trigger avoidance, rescue inhaler use, peak flow monitoring",
+    "notes": "Moderate persistent asthma. Last PFT showed FEV1 75% predicted. Good control with current regimen.",
+    "date": "2024-01-28"
+  },
+  {
+    "id": "PAT005",
+    "patient_name": "David Wilson",
+    "diagnosis": "Depression",
+    "medications": "Sertraline 100mg daily",
+    "symptoms": "Low mood, anhedonia, insomnia",
+    "treatment_plan": "Cognitive behavioral therapy, regular follow-up, sleep hygiene",
+    "notes": "Responding well to SSRI therapy. PHQ-9 score improved from 18 to 8. Continue current dose.",
+    "date": "2024-02-14"
+  },
+  {
+    "id": "PAT006",
+    "patient_name": "Lisa Garcia",
+    "diagnosis": "Osteoarthritis",
+    "medications": "Ibuprofen 600mg three times daily as needed, Acetaminophen 500mg as needed",
+    "symptoms": "Joint pain, stiffness, reduced mobility",
+    "treatment_plan": "Physical therapy, weight management, assistive devices as needed",
+    "notes": "Knee osteoarthritis bilateral. Pain well managed with NSAIDs. Considering intra-articular injections.",
+    "date": "2024-03-05"
+  },
+  {
+    "id": "PAT007",
+    "patient_name": "Robert Martinez",
+    "diagnosis": "Chronic Kidney Disease Stage 3",
+    "medications": "Lisinopril 5mg daily, Calcium acetate 667mg with meals",
+    "symptoms": "Fatigue, edema",
+    "treatment_plan": "Renal diet, fluid restriction, regular lab monitoring",
+    "notes": "eGFR 45 mL/min/1.73m². Proteinuria present. Monitor for progression. BP 135/85.",
+    "date": "2024-01-22"
+  },
+  {
+    "id": "PAT008",
+    "patient_name": "Jennifer Anderson",
+    "diagnosis": "Migraine Headache",
+    "medications": "Sumatriptan 100mg as needed, Propranolol 40mg twice daily",
+    "symptoms": "Severe headaches with aura, nausea, photophobia",
+    "treatment_plan": "Trigger identification, prophylactic therapy, abortive treatment",
+    "notes": "Chronic migraine with 15 headache days per month. Improved frequency with propranolol.",
+    "date": "2024-02-08"
+  }
+]

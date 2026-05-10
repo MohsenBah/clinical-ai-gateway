@@ -7,6 +7,15 @@ class Settings(BaseSettings):
     ollama_model: str = "llama3.2:1b"
     max_query_chars: int = 4000
 
+    # Vector database settings
+    chroma_host: str = "localhost"
+    chroma_port: int = 8000
+    collection_name: str = "clinical_records"
+
+    # RAG settings
+    max_context_docs: int = 3
+    embedding_model: str = "all-MiniLM-L6-v2"
+
     class Config:
         env_prefix = "GATEWAY_"
 

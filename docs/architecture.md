@@ -70,15 +70,16 @@ Constraints:
 
 - Synthetic patient data (Synthea)
 - Optional OpenEMR integration
-- Vector database:
-  - Qdrant or Chroma
+- Vector database: Chroma
+- PHI redaction: Microsoft Presidio
 
 Pipeline:
-1. Data ingestion
-2. PHI detection (Presidio)
-3. Redaction
-4. Embedding generation
-5. Storage in vector DB
+1. Data ingestion from JSON/CSV
+2. PHI detection and anonymization
+3. Text chunking and preprocessing
+4. Embedding generation (Sentence Transformers)
+5. Storage in Chroma vector database
+6. Semantic search for RAG queries
 
 ---
 

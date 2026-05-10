@@ -7,6 +7,7 @@ RUN pip install --no-cache-dir ".[dev]"
 
 COPY gateway ./gateway
 COPY tests ./tests
+COPY data ./data
 
 EXPOSE 8000
 

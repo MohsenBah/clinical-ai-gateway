@@ -1,21 +1,21 @@
 import time
 import uuid
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Request
 
 from gateway.middleware.audit import audit_log
 from gateway.middleware.input_validation import validate_input
 from gateway.middleware.output_filter import filter_output
 from gateway.middleware.rate_limit import check_rate_limit
 from gateway.schemas import QueryRequest, QueryResponse
-from gateway.services.llm_client import LLMClient
 
 router = APIRouter()
-llm_client = LLMClient()
 
 
 @router.post("/query", response_model=QueryResponse)
-def query_model(request: QueryRequest) -> QueryResponse:
+def query_model(request: QueryRequest, app_request: Request) -> QueryResponse:
+    llm_client = app_request.app.state.llm_client
+
     start = time.perf_counter()
     request_id = str(uuid.uuid4())
 
