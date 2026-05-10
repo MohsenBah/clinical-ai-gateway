@@ -68,12 +68,6 @@ pip install -e ".[dev]"
 uvicorn gateway.main:app --reload
 ```
 
-## Run tests
-
-```bash
-pytest
-```
-
 ## Run with Docker Compose
 
 ```bash
