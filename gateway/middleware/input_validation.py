@@ -5,6 +5,8 @@ from dataclasses import dataclass
 class ValidationResult:
     allowed: bool
     reason: str = "allowed"
+    category: str = "validation"
+    matched_pattern: str = ""
 
 
 BLOCK_PATTERNS = [
@@ -25,6 +27,11 @@ def validate_input(query: str) -> ValidationResult:
 
     for pattern in BLOCK_PATTERNS:
         if pattern in normalized:
-            return ValidationResult(False, f"blocked_pattern:{pattern}")
+            return ValidationResult(
+                False, 
+                f"blocked_pattern:{pattern}",
+                category="prompt_injection",
+                matched_pattern=pattern
+            )
 
-    return ValidationResult(True)
+    return ValidationResult(True, category="allowed")

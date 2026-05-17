@@ -47,6 +47,8 @@ def query_model(request: QueryRequest, app_request: Request) -> QueryResponse:
             decision="blocked",
             reason=validation.reason,
             query_length=len(request.query),
+            blocked_category=validation.category,
+            matched_pattern=validation.matched_pattern,
         )
         raise HTTPException(
             status_code=400,
